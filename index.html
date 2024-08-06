@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1qQ2, initial-scale=1.0">
+    <title>Personal password manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Password Manager</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        
+        <p>Welcome to your secure vault! Protecting your digital world starts here. Safeguard your passwords with us,
+            ensuring peace of mind in every login. Need a safe haven for your keys to the digital kingdom? You're in the
+            right place. Let's keep your data fortress strong together. Explore and manage your passwords effortlessly,
+            because your security matters most. Happy securing!</p>
+        <h2>your password</h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+
+
+        </table>
+
+        <h2>Add a password</h2>
+        <form action="/submit" method="post">
+
+            <!-- Text input for website -->
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+
+            <!-- Submit button -->
+            <button class="btn" type="add">Add </button>
+        </form>
+    
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
